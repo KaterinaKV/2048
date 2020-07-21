@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.GameActivity"
+        android:id="@+id/main">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_gravity="center|center_horizontal|center_vertical">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button_menu">
+            <Button
+                    android:text="@string/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/menu" android:textSize="24sp"
+                    android:minWidth="150dip"
+                    android:minHeight="50dip"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_gravity="center|center_horizontal|center_vertical" android:layout_weight="1"
+                    android:layout_margin="10dip" android:onClick="buttonLink"/>
+            <Button
+                    android:text="@string/records"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/records" android:textSize="24sp"
+                    android:minWidth="150dip" android:minHeight="50dip"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_gravity="center|center_horizontal|center_vertical" android:layout_weight="1"
+                    android:layout_margin="10dip" android:onClick="buttonLink"/>
+        </TableRow>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/score_text" android:textSize="50sp"
+                android:textStyle="bold|italic" android:gravity="center"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_above="@id/game_field_table" android:layout_centerVertical="false"
+                android:layout_below="@id/button_menu"/>
+        <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:background="#D3D3D3"
+                android:id="@+id/game_field_table" android:verticalScrollbarPosition="defaultPosition"
+                android:gravity="center|center_horizontal|center_vertical" android:layout_centerInParent="true">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:visibility="visible"
+                      android:layout_gravity="center|center_horizontal|center_vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_0_0" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp"
+                        android:textSize="24sp" style="@style/Widget.AppCompat.Button.Borderless" android:scaleX="1"
+                        android:scaleY="1" android:minWidth="55dip" android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_0_1" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp"
+                        android:textSize="24sp"
+                        android:minWidth="55dip"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:maxWidth="65dip"
+                        android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_0_2" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp"
+                        android:textSize="24sp" style="@style/Widget.AppCompat.Button.Borderless" android:scaleX="1"
+                        android:scaleY="1" android:minWidth="55dip" android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_0_3" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_gravity="center|center_horizontal|center_vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_1_0" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_1_1" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_1_2" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_1_3" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_gravity="center|center_horizontal|center_vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_2_0" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_2_1" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_2_2" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_2_3" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:layout_gravity="center|center_horizontal|center_vertical">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_3_0" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_3_1" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_3_2" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cell_3_3" android:background="#A9A9A9"
+                        android:minHeight="55dip" android:layout_margin="5dp" android:textSize="24sp"
+                        style="@style/Widget.AppCompat.Button.Borderless" android:minWidth="55dip"
+                        android:maxWidth="65dip" android:maxHeight="65dip"/>
+            </TableRow>
+        </TableLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/game_field_swipe"
+                android:layout_below="@id/score_text"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#CDFFFFFF"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:padding="20dip" android:visibility="invisible" android:id="@+id/game_over_layout">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/game_over_text"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:text="@string/game_over"
+                    android:layout_marginBottom="30dip"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:id="@+id/input_name" android:textSize="36sp" android:layout_marginBottom="30dip"
+                    android:gravity="center" android:hint="@string/name_for_record" android:importantForAutofill="no"/>
+            <Button
+                    android:text="@android:string/ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/input_ok" android:gravity="center"
+                    android:minWidth="200dip" android:minHeight="50dip"
+                    android:textSize="30sp" android:layout_gravity="center" android:onClick="buttonLink"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

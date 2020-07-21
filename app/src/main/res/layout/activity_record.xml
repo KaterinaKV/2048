@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.RecordActivity">
+    <RelativeLayout
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp" android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <TextView
+                android:text="@string/records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/records_text" android:textSize="50sp"
+                android:gravity="center" android:paddingTop="10dp" android:layout_marginBottom="20dip"/>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/record_result"
+                android:layout_below="@id/records_text">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
+                    android:id="@+id/records_list"
+                    android:overScrollMode="never">
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                    android:text="@string/no_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/no_record"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" android:gravity="center" android:visibility="gone"
+                    android:minHeight="50dip"
+                    android:layout_marginStart="20dip" android:layout_marginEnd="20dip"/>
+        </FrameLayout>
+        <Button
+                android:text="@string/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/menu_button" android:textSize="24sp"
+                android:minHeight="50dip" android:minWidth="200dip"
+                android:onClick="buttonLink"
+                android:gravity="center"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_below="@id/record_result" android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

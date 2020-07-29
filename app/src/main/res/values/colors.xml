@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--The colors of cells on the game field-->
+    <color name="zero">#A9A9A9</color>
+
+    <color name="two">#DCF6D6</color>
+    <color name="four">#E4F7D4</color>
+    <color name="eight">#EFF3D0</color>
+    <color name="sixteen">#F9EACE</color>
+    <color name="thirtyTwo">#FDDDCB</color>
+    <color name="sixtyFour">#FFCFC8</color>
+
+    <color name="oneHundredTwentyEight">#F5D7DB</color>
+    <color name="twoHundredFiftySix">#ECDCE9</color>
+    <color name="fiveHundredTwelve">#E7DEF1</color>
+
+    <color name="oneThousandTwentyFour">#E3E1F4</color>
+    <color name="twoThousandFortyEight">#DFE5F4</color>
+    <color name="fourThousandNinetySix">#DBE9F3</color>
+    <color name="eightThousandOneHundredNinetyTwo">#D6EEEE</color>
+
+</resources>

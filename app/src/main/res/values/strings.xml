@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">2048</string>
+    <string name="menu">Menu</string>
+    <string name="new_game">New Game</string>
+    <string name="game_over">Game Over</string>
+    <string name="keep_going">Keep Going</string>
+    <string name="records">Records</string>
+    <string name="name_for_record">Input your name</string>
+    <string name="no_records">No records yet</string>
+</resources>
